@@ -1,12 +1,17 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
-import Intro from "./components/Intro"
-import "./App.css"
+import "./App.css";
+import Navigation from "./components/Navigation"
+import Home from "./components/Home"
+import About from './components/About';
+
 
 export default function App() {
   return (
-    <main>
-      <Intro>
-      </Intro>
-    </main>
+    <React.Fragment>
+      <Navigation></Navigation>
+      <Home></Home>
+      <About />
+    </React.Fragment>
   );
 }
