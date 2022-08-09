@@ -1,18 +1,12 @@
 import React from "react";
-import About from "./About";
-import Contact from "./Contact";
-import Navbar from "./Navbar";
-import Projects from "./Projects";
-import Skills from "./Skills";
+import Intro from "./components/Intro"
+import "./App.css"
 
 export default function App() {
   return (
     <main>
-      <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Intro>
+      </Intro>
     </main>
   );
 }
