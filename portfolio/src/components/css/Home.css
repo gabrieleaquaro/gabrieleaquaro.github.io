@@ -1,19 +1,20 @@
 /* HOME */
 
-
 .home-title {
-  position: absolute;
+  position: relative;
   padding-left: 20px;
   top: 35%;
   right: 0;
-  width: 100vw;
+  width: 100%;
   text-align: center;
 }
 
 .home-title h1 {
+  color: var(--primary);
   font-size: 5rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
+  color: var(--secondary);
 }

@@ -1,31 +1,64 @@
 body,
-html {
-  overflow-x: hidden;
+html,
+#root {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-  background-color: #20232a;
-  color: #fff;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: #4e4e4e;
+  background-color: #f5f5f5;
+}
+
+:root {
+  --primary: #F0544F;
+  --secondary: #FDF0D5;
+  --third: #D81E5B;
+  --dark: #040404;
+  --dark-trasp: #040404A0;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
 }
 
 /* 
  * Background colors 
  */
-.blue-bg {
-  background-color: #196fc2;
+.light-bg {
+  background-color: var(--secondary);
 }
 
-.dblue-bg {
-  background-color: #004b91;
+.dark-bg {
+  background-color: var(--dark);
+}
+
+.dark-transp-bg {
+  background-color: var(--dark-trasp);
 }
 
 .logo-nav {
-  color: #196fc2;
   font-weight: 600;
 }
 
-.wt-color {
-  color: #ffffff;
+.light-color {
+  color: var(--secondary)
+}
+
+.dark-color {
+  color: var(--dark);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.full-height {
+  height: 100vh;
 }
