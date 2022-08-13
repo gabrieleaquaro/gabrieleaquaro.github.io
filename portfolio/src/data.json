@@ -1,0 +1,42 @@
+{
+  "skills": [
+    {
+      "name": "Python",
+      "value": 85
+    },
+    {
+      "name": "Tensorflow/Keras",
+      "value": 70
+    },
+    {
+      "name": "React",
+      "value": 75
+    },
+    {
+      "name": "Javascript",
+      "value": 80
+    },
+    {
+      "name": "Java",
+      "value": 70
+    },
+    {
+      "name": "Html/css/BootStrap",
+      "value": 80
+    },
+    {
+      "name": "C,C++,C#",
+      "value": 5
+    }
+  ],
+  "about": [
+    "Hello World!",
+    "I am a computer engineer specialized in Machine Learning and Artificial intelligence,with also a strong background in software development.",
+    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still working.",
+    "About myself..."
+  ],
+  "name": "Gabriele Aquaro",
+  "email": "gabriele.aquaro@gmail.com",
+  "profile": "Machine Learning Engineer",
+  "logo": "GABRIELE"
+}

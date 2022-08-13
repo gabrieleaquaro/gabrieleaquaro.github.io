@@ -4,10 +4,9 @@ import Nav from 'react-bootstrap/Nav';
 import '../App.css';
 import Navbar from 'react-bootstrap/Navbar';
 
-export default function Navigation() {
+export default function Navigation(props) {
 
   const [style, setStyle] = useState("light-color dark-bg");
-
 
   useEffect(() => {
     window.addEventListener('scroll', changeStyle, { passive: true });
@@ -27,7 +26,7 @@ export default function Navigation() {
     <Navbar variant="dark" className={style} fixed="top" expand="md">
       <Container>
         <div>
-          <Navbar.Brand className={"logo-nav primary-color"} href="#home">GABRIELE</Navbar.Brand>
+          <Navbar.Brand className={"logo-nav primary-color"} href="#home">{props.logo}</Navbar.Brand>
         </div>
         <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

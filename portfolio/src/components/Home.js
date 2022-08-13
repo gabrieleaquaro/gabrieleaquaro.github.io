@@ -2,14 +2,14 @@ import React from "react";
 import "./css/Home.css"
 import Typed from "react-typed";
 
-export default function Home() {
+export default function Home(props) {
 
 
   return (
     <React.Fragment>
       <div id="home" className="full-height dark-bg">
         <div className="home-title">
-          <h1>I am Gabriele Aquaro</h1>
+          <h1>I am {props.name} </h1>
           <h2 className="subtitle"> I stand where Problems and <s>ugly</s> Solutions meet. </h2>
           <Typed
             className="subtitle"
