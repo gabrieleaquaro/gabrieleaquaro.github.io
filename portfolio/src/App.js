@@ -4,6 +4,7 @@ import "./App.css";
 import Navigation from "./components/Navigation"
 import Home from "./components/Home"
 import About from './components/About';
+import Skills from './components/Skillls'
 import data from './data.json';
 
 
@@ -16,8 +17,9 @@ export default function App() {
   return (
     <React.Fragment>
       <Navigation logo={data.logo}></Navigation>
-      <Home name={data.name}></Home>
+      <Home name={data.name} />
       <About data={data} />
+      <Skills data={data} />
     </React.Fragment>
   );
 }

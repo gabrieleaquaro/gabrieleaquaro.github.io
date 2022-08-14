@@ -10,6 +10,7 @@
 .title-about {
   font-size: 2rem;
   position: relative;
+  color: var(--dark);
 }
 
 
@@ -30,6 +31,13 @@
 }
 
 .profile-img {
-
   background-color: var(--dark-trasp);
+}
+
+.custom-progress-bar {
+  background-color: var(--secondary);
+}
+
+.custom-progress-bar div.progress-bar {
+  background-color: var(--primary);
 }

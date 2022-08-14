@@ -7,7 +7,7 @@ import SkillProgressBar from "./SkillProgressBar";
 export default function About(props) {
 
   return (
-    <div className="full-height pt-5 mt-5 mb-0" id="about">
+    <section className="pt-5 mt-5 mb-5" id="about">
       <Container className="bg-white m-auto p-auto box-shadow">
         <div className="row">
           <div className="col-sm-12">
@@ -16,8 +16,8 @@ export default function About(props) {
               {/** SKILLS PHOTO and Contacts */}
               <div className="col-md-6 align-center">
                 <div className="row">
-                  <div className="col-sm-6 col-md-4">
-                    <div className="ml-2">
+                  <div className="col-sm-4 col-md-4 col-lg-3 my-auto">
+                    <div className="ml-2 my-auto">
                       <Image src={pic} className="profile-img img-fluid rounded b-shadow-a" alt="" />
                     </div>
                   </div>
@@ -26,11 +26,12 @@ export default function About(props) {
                       <p> <span className="title-s">Name: </span> <span>{props.data.name}</span></p>
                       <p> <span className="title-s">Profile: </span> <span>{props.data.profile}</span></p>
                       <p> <span className="title-s">Email: </span> <span> {props.data.email}</span></p>
+                      <p> <span className="title-s">Location: </span> <span> {props.data.location}</span></p>
                     </div>
                   </div>
                 </div>
 
-                <div className="row">
+                <div className="row  pt-2 ">
                   <p> <span className="title-s"> Skill </span> </p>
 
                   {props.data.skills.map(skill => {
@@ -43,7 +44,7 @@ export default function About(props) {
 
               {/** DESCRIPTION*/}
               <div className="col-md-6">
-                <div className="mb-4">
+                <div className="mt-2 mb-4">
                   <h5 className="title-about">About me</h5>
                 </div>
                 <p className="lead" >
@@ -54,6 +55,6 @@ export default function About(props) {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   )
 }

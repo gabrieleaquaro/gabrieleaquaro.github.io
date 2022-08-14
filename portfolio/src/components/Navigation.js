@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import '../App.css';
@@ -6,36 +6,58 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function Navigation(props) {
 
-  const [style, setStyle] = useState("light-color dark-bg");
+  const activeSect = useRef('')
+  const [linkStyles, setLinkStyles] = useState({});
 
   useEffect(() => {
-    window.addEventListener('scroll', changeStyle, { passive: true });
-    return () => window.removeEventListener('scroll', changeStyle);
+    const onScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let newCurrent = ''
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.scrollY >= sectionTop - 300) {
+          newCurrent = section.getAttribute("id")
+        }
+      });
+
+      if (activeSect.current !== newCurrent) {
+        const styles = { ...{ home: '', about: '', projects: '', contact: '' }, ...{ [newCurrent]: 'active' } }
+        setLinkStyles(styles);
+        activeSect.current = newCurrent;
+      }
+    };
+
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, [])
 
 
-  const changeStyle = () => {
-    if (window.scrollY >= 60) {
-      setStyle("dark-transp-bg");
-    } else {
-      setStyle("light-color")
+  const scrollToSection = (name) => {
+    const sections = document.querySelectorAll("section");
+    const index = Object.values(sections).findIndex(sect => sect.getAttribute('id') === name);
+    if (index !== -1) {
+      sections[index].scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   }
 
   return (
-    <Navbar variant="dark" className={style} fixed="top" expand="md">
+    <Navbar variant="dark" className={'dark-transp-bg'} fixed="top" expand="md">
       <Container>
         <div>
-          <Navbar.Brand className={"logo-nav primary-color"} href="#home">{props.logo}</Navbar.Brand>
+          <Navbar.Brand className={"logo-nav primary-color"} >{props.logo}</Navbar.Brand>
         </div>
         <div>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={"me-auto"}>
-              <Nav.Link className="light-color" href="#home">HOME</Nav.Link>
-              <Nav.Link className="light-color" href="#about">ABOUT</Nav.Link>
-              <Nav.Link className="light-color" href="#projects">PROJECTS</Nav.Link>
-              <Nav.Link className="light-color" href="#contact">CONTACT</Nav.Link>
+              <Nav.Link className={linkStyles.home} onClick={() => scrollToSection('home')}>HOME</Nav.Link>
+              <Nav.Link className={linkStyles.about} onClick={() => scrollToSection('about')}>ABOUT</Nav.Link>
+              <Nav.Link className={linkStyles.skills} onClick={() => scrollToSection('skills')} >SKILLS</Nav.Link>
+              <Nav.Link className={linkStyles.projects} onClick={() => scrollToSection('projects')} >PROJECTS</Nav.Link>
+              <Nav.Link className={linkStyles.contact} onClick={() => scrollToSection('contact')} >CONTACT</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </div>

@@ -18,15 +18,15 @@
     },
     {
       "name": "Java",
-      "value": 70
+      "value": 60
     },
     {
-      "name": "Html/css/BootStrap",
-      "value": 80
+      "name": "HTML/CSS/BootStrap",
+      "value": 65
     },
     {
-      "name": "C,C++,C#",
-      "value": 5
+      "name": "C/C++/C#",
+      "value": 45
     }
   ],
   "about": [
@@ -38,5 +38,6 @@
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",
   "profile": "Machine Learning Engineer",
-  "logo": "GABRIELE"
+  "location": "Milan, IT",
+  "logo": "G. Aquaro"
 }
