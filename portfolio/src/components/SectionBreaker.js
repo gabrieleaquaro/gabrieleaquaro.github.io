@@ -11,13 +11,9 @@ export default function SectionBreaker(props) {
       <div className="overlay-mf"></div>
       <Container className="position-relative">
         <div className="row">
-          <span className="section-title"> Filler, #TODO </span>
+          {props.content}
         </div>
       </Container>
     </div>
   )
-
-
-
-
 }

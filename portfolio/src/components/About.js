@@ -18,7 +18,7 @@ export default function About(props) {
                 <div className="row">
                   <div className="col-sm-4 col-md-4 col-lg-3 my-auto">
                     <div className="ml-2 my-auto">
-                      <Image src={pic} className="profile-img img-fluid rounded b-shadow-a" alt="" />
+                      <Image src={pic} className="img-fluid rounded b-shadow-a" alt="" />
                     </div>
                   </div>
                   <div className="col-sm-6 col-md-7 mt-3">

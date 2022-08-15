@@ -32,9 +32,10 @@ h6 {
 }
 
 :root {
-  --primary: #F0544F;
+  --primary: #EF5B0C;
+  --secondary: #b47b5d;
+  --secondary-trasp: #fdcaafaf;
   --light: #fafafa;
-  --secondary: #fdcecd;
   --dark: #040404;
   --dark-trasp: #040404E0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -112,6 +113,10 @@ h6 {
   font-size: 1.1rem;
 }
 
+.profile-img {
+  max-width: 50%;
+}
+
 .section-title {
   text-decoration: none;
   font-size: 3rem;
@@ -137,4 +142,20 @@ h6 {
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.author-img {
+  max-width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--primary);
+  background-color: var(--dark-trasp);
+  font-weight: var(--bold-font-weight);
+}
+
+.footer a {
+  color: var(--primary);
 }

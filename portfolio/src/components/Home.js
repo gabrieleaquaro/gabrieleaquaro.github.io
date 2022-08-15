@@ -14,12 +14,13 @@ export default function Home(props) {
           <div className="intro-bg"> </div>
           <div className="home-title">
             <h1>I am {props.name} </h1>
-            <h2 className="subtitle"> I stand where Problems and <s className="primary-color">ugly</s> Solutions meet. </h2>
+            <h2 className="subtitle"> I stand where Problems and Solutions meet. </h2>
             <Typed
               className="subtitle"
               strings={[
-                "Full-Stack Developer",
+                "FullStack Developer",
                 "Machine Learning Engineer",
+                "Data Scientist",
                 "Bad Designer",
               ]}
               typeSpeed={50}

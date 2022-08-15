@@ -10,8 +10,9 @@
 }
 
 .work-img {
-  display: block;
+  display: flex;
   overflow: hidden;
+  justify-content: center;
 }
 
 .work-img img {
@@ -35,6 +36,10 @@
   font-size: 2.5rem;
   color: var(--primary);
   float: right;
+}
+
+.w-like a {
+  color: var(--primary);
 }
 
 .w-like svg {

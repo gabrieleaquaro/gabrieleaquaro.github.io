@@ -22,12 +22,8 @@
   width: 65%;
 }
 
-.profile-img {
-  background-color: var(--dark-trasp);
-}
-
 .custom-progress-bar {
-  background-color: var(--secondary);
+  background-color: var(--secondary-trasp);
 }
 
 .custom-progress-bar div.progress-bar {
