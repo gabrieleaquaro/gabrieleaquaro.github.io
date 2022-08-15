@@ -6,6 +6,13 @@
   text-align: center;
 }
 
+.card-box:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: var(--primary);
+  box-shadow: 0 0 0 10px var(--secondary);
+}
+
 
 .card-box-ico .ico-circle {
   transition: all 500ms ease;
@@ -24,8 +31,11 @@
   align-content: center;
   box-shadow: 0 0 0 10px var(--primary);
   display: block;
+  box-sizing: border-box;
 }
 
 .ico-circle svg {
-  scale: 1.5;
+  line-height: 0;
+  font-size: 40px;
+  scale: 1.4;
 }

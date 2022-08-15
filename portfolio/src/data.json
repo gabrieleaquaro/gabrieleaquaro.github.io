@@ -35,6 +35,38 @@
     "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still working.",
     "About myself..."
   ],
+  "abilities": [
+    {
+      "title": "Machine Learning Engineer",
+      "text": "During Master degree I have focused on Machine Learning and AI techniques. I obtained a strong theoretical base and got to challenge myself on various projects in this area.",
+      "icon": "ai"
+    },
+    {
+      "title": "Full Stack Developer",
+      "text": "",
+      "icon": "code"
+    },
+    {
+      "title": "Problem Solving",
+      "text": "",
+      "icon": ""
+    },
+    {
+      "title": "Time Managment",
+      "text": "",
+      "icon": ""
+    },
+    {
+      "title": "Learning Enthusiast",
+      "text": "",
+      "icon": ""
+    },
+    {
+      "title": "Goal Focused",
+      "text": "",
+      "icon": ""
+    }
+  ],
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",
   "profile": "Machine Learning Engineer",

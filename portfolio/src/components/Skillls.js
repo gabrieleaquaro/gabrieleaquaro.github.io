@@ -13,7 +13,9 @@ export default function Skills(props) {
         <SectionTitle title={"Knowledge & Abilities"} subtitle={"Something about how I work."}> </SectionTitle>
         <Container>
           <div className="row">
-            <CardBox title="Title" text="Lorem ipsum dolor sit amet consectetur adipisicing elit." icon={"bi-bar-chart"}></CardBox>
+            {props.data.abilities.map(ab => {
+              return <CardBox title={ab.title} text={ab.text} icon={ab.icon}></CardBox>
+            })}
           </div>
         </Container>
       </div>

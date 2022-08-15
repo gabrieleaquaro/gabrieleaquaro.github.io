@@ -2,10 +2,6 @@ import React from "react";
 
 
 export default function SectionTitle(props) {
-
-
-
-
   return (<div className="mb-3 text-center">
     <h3 className="section-title">
       {props.title}
