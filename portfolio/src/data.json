@@ -37,34 +37,72 @@
   ],
   "abilities": [
     {
-      "title": "Machine Learning Engineer",
+      "title": "ML Engineer",
       "text": "During Master degree I have focused on Machine Learning and AI techniques. I obtained a strong theoretical base and got to challenge myself on various projects in this area.",
       "icon": "ai"
     },
     {
       "title": "Full Stack Developer",
-      "text": "",
+      "text": "I have worked as a Freelance SE during university years and at Cisco after graduation. I like to work as full stack developer becasue it allows to see the 'full-scope' of an idea: from the problem to the solution.",
       "icon": "code"
     },
     {
       "title": "Problem Solving",
-      "text": "",
-      "icon": ""
+      "text": "I am an engineer: I always remember that when I write my code. I think it's better to study the problem before starting the implementation.",
+      "icon": "chess"
     },
     {
       "title": "Time Managment",
-      "text": "",
-      "icon": ""
+      "text": "I have been a professional athlete during my university years, I used to schedule 10 training sessions a week and my exams. I can handle your problem too.",
+      "icon": "time"
     },
     {
       "title": "Learning Enthusiast",
-      "text": "",
-      "icon": ""
+      "text": "text",
+      "icon": "book"
     },
     {
       "title": "Goal Focused",
-      "text": "",
-      "icon": ""
+      "text": "text",
+      "icon": "goal"
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work1"
+    },
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work2"
+    },
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work3"
+    },
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work4"
+    },
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work5"
+    },
+    {
+      "title": "Title",
+      "text": "subtext",
+      "date": "15 August 2022",
+      "img": "work6"
     }
   ],
   "name": "Gabriele Aquaro",

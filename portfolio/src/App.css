@@ -36,7 +36,7 @@ h6 {
   --light: #fafafa;
   --secondary: #fdcecd;
   --dark: #040404;
-  --dark-trasp: #040404C0;
+  --dark-trasp: #040404E0;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -66,6 +66,13 @@ h6 {
   background-color: #FFFFFF00;
 }
 
+.img-bg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+}
+
 .logo-nav {
   font-weight: var(--bold-font-weight);
   font-size: 1.5rem;
@@ -73,12 +80,14 @@ h6 {
 
 .navbar-nav .nav-link {
   color: var(--light);
-  font-size: var(--bold-font-weight);
+  font-weight: var(--bold-font-weight);
+  font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link.active {
   color: var(--primary)
 }
+
 
 .light-color {
   color: var(--light)
@@ -94,6 +103,7 @@ h6 {
 
 .full-height {
   height: 100vh;
+  z-index: 0;
 }
 
 .title-s {
@@ -119,4 +129,12 @@ h6 {
   height: 5px;
   background-color: var(--primary);
   margin: 0 auto;
+}
+
+.box-shadow {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
 }

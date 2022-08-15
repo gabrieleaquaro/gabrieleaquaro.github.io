@@ -1,30 +1,26 @@
 import React from "react";
-import './css/cardbox.css'
-import { FaBeer, } from 'react-icons/fa';
-import { GiArtificialIntelligence, } from 'react-icons/gi';
-import { RiCodeSSlashFill } from 'react-icons/ri';
+import { FaBeer, FaCalendarCheck, FaChessBoard, FaBook, FaCode } from 'react-icons/fa';
+import { GiStairsGoal } from 'react-icons/gi';
+import { VscGraphScatter } from "react-icons/vsc";
+import './css/cardbox.css';
 
 export default function CardBox(props) {
 
-  const iconSwitch = (name) => {
-    switch (name) {
-      case 'ai':
-        return <GiArtificialIntelligence />
-
-      case 'code':
-        return <RiCodeSSlashFill />
-
-      default:
-        return <FaBeer />
-    }
+  const iconSwitch = {
+    'ai': <VscGraphScatter />,
+    'code': <FaCode />,
+    'chess': <FaChessBoard />,
+    'time': <FaCalendarCheck />,
+    'goal': <GiStairsGoal />,
+    'book': <FaBook />,
   }
 
   return (
     <div className="col-md-4">
-      <div className="card-box">
-        <div className="card-box-ico mb-4">
+      <div className="card-box box-shadow">
+        <div className="card-box-ico mb-4 ">
           <span className="ico-circle">
-            {iconSwitch(props.icon)}
+            {iconSwitch[props.icon] ? iconSwitch[props.icon] : <FaBeer />}
           </span>
         </div>
         <div>

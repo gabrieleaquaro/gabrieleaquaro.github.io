@@ -1,20 +1,39 @@
 /* HOME */
 
+
+.home-sect {
+  height: 100vh;
+  background-color: var(--dark);
+}
+
 .home-title {
-  position: relative;
+  position: absolute;
   padding-left: 20px;
   top: 35%;
   right: 0;
   width: 100%;
   text-align: center;
+  z-index: 10;
 }
 
 .home-title h1 {
-  color: var(--primary);
+  color: var(--light);
   font-size: 5rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
   color: var(--light);
+}
+
+.intro-bg {
+  background-image: url('../../img/intro.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center center;
+  opacity: 0.2;
+  height: 100%;
+  right: 0;
+  top: 0;
 }

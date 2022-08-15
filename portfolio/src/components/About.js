@@ -43,7 +43,7 @@ export default function About(props) {
               </div>
 
               {/** DESCRIPTION*/}
-              <div className="col-md-6">
+              <div className="col-md-6 mt-1">
                 <div className="mt-2 mb-4">
                   <h5 className="title-about">About me</h5>
                 </div>

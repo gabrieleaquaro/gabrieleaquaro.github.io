@@ -1,0 +1,21 @@
+.large-padding {
+  position: relative;
+  padding: 8rem 0
+}
+
+.overlay-mf {
+  position: absolute;
+  background-color: var(--secondary);
+  top: 0;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+
+.generic-bg {
+  background-image: url('../../img/background-generic.jpg');
+  background-size: cover;
+}
