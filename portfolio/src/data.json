@@ -58,21 +58,21 @@
     },
     {
       "title": "Learning Enthusiast",
-      "text": "text",
+      "text": "I love learning new stuff. Both on my personal project and during my work, I'm always prone to study or to learn from others. ",
       "icon": "book"
     },
     {
       "title": "Goal Focused",
-      "text": "text",
+      "text": "I give my best when my objective is clear: You can't solve a problem without knowing it.",
       "icon": "goal"
     }
   ],
   "experiences": [
     {
-      "title": "Cisco Systems",
-      "text": "Full Stack Dev.",
+      "title": "Full Stack Developer",
+      "text": "Cisco Systems",
       "date": "November 2021 - Currently",
-      "url": "",
+      "url": "/",
       "img": "work1"
     },
     {
@@ -86,22 +86,24 @@
       "title": "WebGL based Platformer",
       "text": "Uni. Project",
       "date": "March 2021",
+      "url": "/platformer",
       "img": "work3"
     },
     {
       "title": "CNN for Image segmentation",
-      "text": "subtext",
+      "text": "Uni. Project",
+      "url": "/",
       "date": "November 2020",
       "img": "work4"
     },
     {
-      "title": "Title",
-      "text": "subtext",
-      "date": "15 August 2022",
+      "title": "Connect4 AI using minmax algo.",
+      "text": "Personal Project",
+      "date": "May 2020",
       "img": "work5"
     },
     {
-      "title": "Title",
+      "title": "",
       "text": "subtext",
       "date": "15 August 2022",
       "img": "work6"

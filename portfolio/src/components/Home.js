@@ -9,8 +9,6 @@ export default function Home(props) {
     <React.Fragment>
       <section id="home">
         <div className="home-sect">
-
-
           <div className="intro-bg"> </div>
           <div className="home-title">
             <h1>I am {props.name} </h1>

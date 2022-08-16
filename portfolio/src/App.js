@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./App.css";
 import About from './components/About';
 import Citation from './components/CitationBox';
+import Contact from './components/Contact';
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import SectionBreaker from './components/SectionBreaker';
@@ -14,10 +15,8 @@ import data from './data.json';
 export default function App() {
 
   useEffect(() => {
-    document.title = "Gabriele Aquaro"
+    document.title = "G. Aquaro"
   }, []);
-
-  const TODO = (<span className="section-title"> TODO</span>)
 
   return (
     <React.Fragment>
@@ -27,7 +26,8 @@ export default function App() {
       <Skills data={data} />
       <SectionBreaker content={<Citation author={data.citation.author} text={data.citation.text} />} />
       <Works data={data} />
-      <SectionBreaker content={TODO}> </SectionBreaker>
+      <Contact></Contact>
+
       <footer className='footer'> Copyright by Aquaro Gabriele, Design by <a href="https://bootstrapmade.com/"> BootstrapMade </a></footer>
     </React.Fragment>
   );
