@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import data from "./data.json";
-import Navigation from "./components/Navigation";
 import { Col, Container, Row } from "react-bootstrap";
 
 export default function ProjectPage(props) {
