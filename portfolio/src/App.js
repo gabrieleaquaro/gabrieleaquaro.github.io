@@ -1,21 +1,19 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect } from "react";
 import "./App.css";
-import About from './components/About';
-import Citation from './components/CitationBox';
-import Contact from './components/Contact';
+import About from "./components/About";
+import Citation from "./components/CitationBox";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
-import SectionBreaker from './components/SectionBreaker';
-import Skills from './components/Skillls';
-import Works from './components/Works';
-import data from './data.json';
-
+import SectionBreaker from "./components/SectionBreaker";
+import Skills from "./components/Skillls";
+import Works from "./components/Works";
+import data from "./data.json";
 
 export default function App() {
-
   useEffect(() => {
-    document.title = "G. Aquaro"
+    document.title = "G. Aquaro";
   }, []);
 
   return (
@@ -24,11 +22,17 @@ export default function App() {
       <Home name={data.name} />
       <About data={data} />
       <Skills data={data} />
-      <SectionBreaker content={<Citation author={data.citation.author} text={data.citation.text} />} />
+      <SectionBreaker
+        content={
+          <Citation author={data.citation.author} text={data.citation.text} />
+        }
+      />
       <Works data={data} />
       <Contact></Contact>
-
-      <footer className='footer'> Copyright by Aquaro Gabriele, Design by <a href="https://bootstrapmade.com/"> BootstrapMade </a></footer>
+      <footer className="footer">
+        Copyright by Aquaro Gabriele, Design by
+        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </footer>
     </React.Fragment>
   );
 }

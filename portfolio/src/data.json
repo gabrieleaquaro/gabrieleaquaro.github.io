@@ -31,9 +31,10 @@
   ],
   "about": [
     "Hello World!",
-    "I am a computer engineer specialized in Machine Learning and Artificial intelligence,with also a strong background in software development.",
-    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still working.",
-    "About myself..."
+    "My name is Gabriele Aquaro and I am a computer engineer specialized in Machine Learning and Artificial intelligence. I have also a strong background in software development.",
+    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still employed.",
+    "While I was at the university I used to be a professional T&F athlete. During this period, I represented the Italian Team 🇮🇹 multiple times.",
+    "I love all sports and still play a lot of them to keep myself balanced. I'm always down for hiking!"
   ],
   "abilities": [
     {
@@ -72,39 +73,41 @@
       "title": "Full Stack Developer",
       "text": "Cisco Systems",
       "date": "November 2021 - Currently",
-      "url": "/",
+      "url": "/project-details/cisco",
       "img": "work1"
     },
     {
       "title": "Theme Tool (Eni S.p.a)",
       "text": "Freelance Soft. Dev.",
       "date": "September 2021",
-      "url": "https://github.com/gabrieleaquaro/THEME_Tool",
+      "url": "/project-details/theme",
       "img": "work2"
     },
     {
       "title": "WebGL based Platformer",
       "text": "Uni. Project",
       "date": "March 2021",
-      "url": "/platformer",
+      "url": "/project-details/platformer",
       "img": "work3"
     },
     {
-      "title": "CNN for Image segmentation",
+      "title": "Image segmentation for grass recognition.",
       "text": "Uni. Project",
-      "url": "/",
+      "url": "/project-details/cnn",
       "date": "November 2020",
       "img": "work4"
     },
     {
-      "title": "Connect4 AI using minmax algo.",
+      "title": "Connect4 AI Agent.",
       "text": "Personal Project",
+      "url": "/project-details/connect4",
       "date": "May 2020",
       "img": "work5"
     },
     {
-      "title": "",
+      "title": "Professional Athlete",
       "text": "subtext",
+      "url": "/project-details/athlete",
       "date": "15 August 2022",
       "img": "work6"
     }
@@ -112,6 +115,52 @@
   "citation": {
     "author": "Douglas Hofstadter",
     "text": "Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law."
+  },
+  "projectsDetails":{
+    "cnn" : {
+      "title" : "Title",
+      "description" : "description",
+      "category" :"category",
+      "date" :"date",
+      "imgs" : []
+    },
+    "cisco" : {
+      "title" : "Title",
+      "description" : "description",
+      "category" :"category",
+      "date" :"date",
+      "imgs" : []
+    },
+    "theme" : {
+      "title" : "Title",
+      "description" : "description",
+      "category" :"category",
+      "date" :"date",
+      "url" : "https:/github.com/gabrieleaquaro/THEME_Tool",
+      "imgs" : []
+    },
+    "platformer" : {
+      "title" : "Title",
+      "description" : "description",
+      "url":"https://gabrieleaquaro.github.io/platformer/",
+      "category" :"category",
+      "date" :"date",
+      "imgs" : []
+    },
+    "connect4" : {
+      "title" : "Title",
+      "description" : "description",
+      "category" :"category",
+      "date" :"date",
+      "imgs" : []
+    },
+    "athlete" : {
+      "title" : "Title",
+      "description" : "description",
+      "category" :"category",
+      "date" :"date",
+      "imgs" : []
+    }
   },
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",

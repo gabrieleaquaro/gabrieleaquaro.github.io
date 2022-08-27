@@ -85,7 +85,7 @@ h6 {
   font-size: 1.1rem;
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link.activated {
   color: var(--primary)
 }
 
