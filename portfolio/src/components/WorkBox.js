@@ -6,7 +6,7 @@ import work1 from "../img/work1.png";
 import work2 from "../img/work2.png";
 import work3 from "../img/work3.png";
 import work4 from "../img/work4.jpg";
-import work5 from "../img/work5.jpg";
+import work5 from "../img/work5.png";
 import work6 from "../img/work6.jpg";
 
 export default function WorkBox(props) {

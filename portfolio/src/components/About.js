@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import pic from "../img/profile.png";
+import profile from "../img/profile.png";
 import "./css/about.css";
 import SkillProgressBar from "./SkillProgressBar";
 
@@ -17,7 +17,7 @@ export default function About(props) {
                   <div className="col-sm-4 col-md-4 col-lg-3 my-auto">
                     <div className="ml-2 my-auto">
                       <Image
-                        src={pic}
+                        src={profile}
                         className="img-fluid rounded b-shadow-a"
                         alt=""
                       />

@@ -8,8 +8,8 @@ export default function ProjectPage(props) {
   const projectData = data.projectsDetails[projectId];
 
   useEffect(() => {
-    document.title = "G. Aquaro";
-  }, []);
+    document.title = projectData.title;
+  }, [projectData.title]);
 
   return (
     <>

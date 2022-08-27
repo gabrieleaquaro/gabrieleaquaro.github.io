@@ -4,15 +4,16 @@
 .home-sect {
   height: 100vh;
   background-color: var(--dark);
+  align-items:center;
+  text-align: center;
 }
 
 .home-title {
   position: absolute;
   padding-left: 20px;
-  top: 35%;
+  top: 33vh;
   right: 0;
   width: 100%;
-  text-align: center;
   z-index: 10;
 }
 
@@ -27,10 +28,10 @@
 }
 
 .intro-bg {
-  background-image: url('../../img/intro.png');
+  background-image: url('../../img/intro.JPG');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   opacity: 0.2;
   height: 100%;

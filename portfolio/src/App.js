@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import About from "./components/About";
 import Citation from "./components/CitationBox";
@@ -12,10 +12,6 @@ import Works from "./components/Works";
 import data from "./data.json";
 
 export default function App() {
-  useEffect(() => {
-    document.title = "G. Aquaro";
-  }, []);
-
   return (
     <React.Fragment>
       <Navigation logo={data.logo}></Navigation>

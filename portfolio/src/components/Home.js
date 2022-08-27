@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./css/Home.css";
 import ReactTypingEffect from "react-typing-effect";
 
 export default function Home(props) {
+  const pic1 = "../../img/intro.JPG";
+  const pic2 = "../../img/intro_2.JPG";
+
+  const [bg, setBg] = useState(pic1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBg((bg) => (bg === pic1 ? pic2 : pic1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <React.Fragment>
       <section id="home">
         <div className="home-sect">
-          <div className="intro-bg"> </div>
+          <div className="intro-bg"></div>
           <div className="home-title">
             <h1>I am {props.name} </h1>
             <h2 className="subtitle">

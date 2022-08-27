@@ -33,7 +33,7 @@
     "Hello World!",
     "My name is Gabriele Aquaro and I am a computer engineer specialized in Machine Learning and Artificial intelligence. I have also a strong background in software development.",
     "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still employed.",
-    "While I was at the university I used to be a professional T&F athlete. During this period, I represented the Italian Team 🇮🇹 multiple times.",
+    "While I was at the university I used to be a professional T&F athlete. During this period, I represented the Italian Team multiple times. 🇮🇹",
     "I love all sports and still play a lot of them to keep myself balanced. I'm always down for hiking!"
   ],
   "abilities": [
@@ -105,10 +105,10 @@
       "img": "work5"
     },
     {
-      "title": "Professional Athlete",
-      "text": "subtext",
-      "url": "/project-details/athlete",
-      "date": "15 August 2022",
+      "title": "Adrenalina Board Game",
+      "text": "University Project",
+      "url": "/project-details/adrenalina",
+      "date": "May 2019",
       "img": "work6"
     }
   ],
@@ -154,7 +154,7 @@
       "date" :"date",
       "imgs" : []
     },
-    "athlete" : {
+    "adrenalina" : {
       "title" : "Title",
       "description" : "description",
       "category" :"category",
