@@ -28,13 +28,16 @@
 }
 
 .intro-bg {
-  background-image: url('../../img/intro.JPG');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center top;
   opacity: 0.2;
   height: 100%;
   right: 0;
   top: 0;
+}
+
+ .background_1 {
+  background-image: url('../../img/intro.jpg');
 }
