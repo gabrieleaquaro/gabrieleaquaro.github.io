@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
+import "./style/index.css";
+import MainPage from "./MainPage";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProjectPage from "./ProjectPage";
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <Routes>
-      <Route exact path="/" element={<App />} />
+      <Route exact path="/" element={<MainPage />} />
     </Routes>
     <Routes>
       <Route path="project-details/:projectId" element={<ProjectPage />} />

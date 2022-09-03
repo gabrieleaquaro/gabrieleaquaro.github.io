@@ -32,9 +32,9 @@
   "about": [
     "Hello World!",
     "My name is Gabriele Aquaro and I am a computer engineer specialized in Machine Learning and Artificial intelligence. I have also a strong background in software development.",
-    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a Full stack developer at Cisco Systems, where I'm still employed.",
+    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a software developer at Cisco Systems, where I am working on optical network controllers",
     "While I was at the university I used to be a professional T&F athlete. During this period, I represented the Italian Team multiple times. 🇮🇹",
-    "I love all sports and still play a lot of them to keep myself balanced. I'm always down for hiking!"
+    "I love all sports and still play a lot of them to keep my work-life balanced.","I'm always down for hiking!"
   ],
   "abilities": [
     {
@@ -162,6 +162,18 @@
       "imgs" : []
     }
   },
+  "contact": [{
+    "icon" : "instagram",
+    "url" : "http://google.com"
+  },
+  {
+    "icon" : "google",
+    "url" : "https://www.google.com/search?q=gabriele+aquaro"
+  },
+  {
+    "icon" : "github",
+    "url" : "http://google.com"
+  }],
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",
   "profile": "Machine Learning Engineer",

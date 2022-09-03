@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import "./App.css";
+import "./style/MainPage.css";
 import About from "./components/About";
 import Citation from "./components/CitationBox";
 import Contact from "./components/Contact";
@@ -11,7 +11,7 @@ import Skills from "./components/Skillls";
 import Works from "./components/Works";
 import data from "./data.json";
 
-export default function App() {
+export default function MainPage() {
   return (
     <React.Fragment>
       <Navigation logo={data.logo}></Navigation>
@@ -24,10 +24,14 @@ export default function App() {
         }
       />
       <Works data={data} />
-      <Contact></Contact>
+      <Contact contactInfo={data.contact}></Contact>
       <footer className="footer">
-        Copyright by Aquaro Gabriele, Design by
-        <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Copyright by Aquaro Gabriele,{" "}
+        <span className="smaller">
+          {" "}
+          Design by &nbsp;
+          <a href="https://bootstrapmade.com/">BootstrapMade</a>{" "}
+        </span>
       </footer>
     </React.Fragment>
   );

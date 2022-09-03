@@ -28,7 +28,7 @@
 }
 
 .intro-bg {
-  background-image: url('../../img/intro.jpg');
+  /*background-image: url('../../img/intro.jpg');*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

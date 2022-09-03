@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import "../App.css";
 import Navbar from "react-bootstrap/Navbar";
 
 export default function Navigation(props) {
@@ -51,19 +50,34 @@ export default function Navigation(props) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={"me-auto"}>
-              <Nav.Link className={linkStyles.home} href={"#home"}>
+              <Nav.Link
+                className={linkStyles.home}
+                href={props.baseUrl ? props.baseUrl + "#home" : "#home"}
+              >
                 HOME
               </Nav.Link>
-              <Nav.Link className={linkStyles.about} href={"#about"}>
+              <Nav.Link
+                className={linkStyles.about}
+                href={props.baseUrl ? props.baseUrl + "#about" : "#about"}
+              >
                 ABOUT
               </Nav.Link>
-              <Nav.Link className={linkStyles.skills} href={"#skills"}>
+              <Nav.Link
+                className={linkStyles.skills}
+                href={props.baseUrl ? props.baseUrl + "#skills" : "#skills"}
+              >
                 SKILLS
               </Nav.Link>
-              <Nav.Link className={linkStyles.projects} href={"#projects"}>
+              <Nav.Link
+                className={linkStyles.projects}
+                href={props.baseUrl ? props.baseUrl + "#projects" : "#projects"}
+              >
                 PROJECTS
               </Nav.Link>
-              <Nav.Link className={linkStyles.contact} href={"#contact"}>
+              <Nav.Link
+                className={linkStyles.contact}
+                href={props.baseUrl ? props.baseUrl + "#contact" : "#contact"}
+              >
                 CONTACT
               </Nav.Link>
             </Nav>
