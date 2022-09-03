@@ -136,7 +136,7 @@
       "description" : "description",
       "category" :"category",
       "date" :"date",
-      "url" : "https:/github.com/gabrieleaquaro/THEME_Tool",
+      "url" : "https://github.com/gabrieleaquaro/THEME_Tool",
       "imgs" : []
     },
     "platformer" : {
@@ -164,7 +164,7 @@
   },
   "contact": [{
     "icon" : "instagram",
-    "url" : "http://google.com"
+    "url" : "https://www.instagram.com/gabrieleaquaro/"
   },
   {
     "icon" : "google",
@@ -172,7 +172,7 @@
   },
   {
     "icon" : "github",
-    "url" : "http://google.com"
+    "url" : "https://github.com/gabrieleaquaro"
   }],
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",

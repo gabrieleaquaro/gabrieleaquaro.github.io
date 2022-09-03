@@ -22,7 +22,7 @@ export default function Contact(props) {
                   return (
                     <div className="col-md-4 my-4 d-flex justify-content-center">
                       <div className="card-box-ico">
-                        <a href={el.url}>
+                        <a href={el.url} target="_blank" rel="noreferrer">
                           <span className="ico-circle dark-color">
                             {icons[el.icon] ? icons[el.icon] : null}
                           </span>
