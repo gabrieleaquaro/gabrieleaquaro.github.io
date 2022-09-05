@@ -32,9 +32,10 @@
   "about": [
     "Hello World!",
     "My name is Gabriele Aquaro and I am a computer engineer specialized in Machine Learning and Artificial intelligence. I have also a strong background in software development.",
-    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a software developer at Cisco Systems, where I am working on optical network controllers",
-    "While I was at the university I used to be a professional T&F athlete. During this period, I represented the Italian Team multiple times. 🇮🇹",
-    "I love all sports and still play a lot of them to keep my work-life balanced.","I'm always down for hiking!"
+    "I graduated at Polytechnic of Milan in 2021 and in the same period I started working as a software developer at Cisco Systems, where I am still working on optical network controllers.",
+    "While I in university I used to be a professional Track and Field Athlete. During these times, I represented the Italian Team in multiple occasion. 🇮🇹",
+    "I love all sports and still play a lot of them to keep my work-life balanced.",
+    "I'm always down for hiking!"
   ],
   "abilities": [
     {
@@ -116,64 +117,66 @@
     "author": "Douglas Hofstadter",
     "text": "Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law."
   },
-  "projectsDetails":{
-    "cnn" : {
-      "title" : "Title",
-      "description" : "description",
-      "category" :"category",
-      "date" :"date",
-      "imgs" : []
+  "projectsDetails": {
+    "cnn": {
+      "title": "Title",
+      "description": "description",
+      "category": "category",
+      "date": "date",
+      "imgs": []
     },
-    "cisco" : {
-      "title" : "Title",
-      "description" : "description",
-      "category" :"category",
-      "date" :"date",
-      "imgs" : []
+    "cisco": {
+      "title": "Title",
+      "description": "description",
+      "category": "category",
+      "date": "date",
+      "imgs": []
     },
-    "theme" : {
-      "title" : "Title",
-      "description" : "description",
-      "category" :"category",
-      "date" :"date",
-      "url" : "https://github.com/gabrieleaquaro/THEME_Tool",
-      "imgs" : []
+    "theme": {
+      "title": "Title",
+      "description": "description",
+      "category": "category",
+      "date": "date",
+      "url": "https://github.com/gabrieleaquaro/THEME_Tool",
+      "imgs": []
     },
-    "platformer" : {
-      "title" : "Title",
-      "description" : "description",
-      "url":"https://gabrieleaquaro.github.io/platformer/",
-      "category" :"category",
-      "date" :"date",
-      "imgs" : []
+    "platformer": {
+      "title": "Title",
+      "description": "description",
+      "url": "https://gabrieleaquaro.github.io/platformer/",
+      "category": "category",
+      "date": "date",
+      "imgs": []
     },
-    "connect4" : {
-      "title" : "Title",
-      "description" : "description",
-      "category" :"category",
-      "date" :"date",
-      "imgs" : []
+    "connect4": {
+      "title": "Title",
+      "description": "description",
+      "category": "category",
+      "date": "date",
+      "imgs": []
     },
-    "adrenalina" : {
-      "title" : "Title",
-      "description" : "description",
-      "category" :"category",
-      "date" :"date",
-      "imgs" : []
+    "adrenalina": {
+      "title": "Title",
+      "description": "description",
+      "category": "category",
+      "date": "date",
+      "imgs": []
     }
   },
-  "contact": [{
-    "icon" : "instagram",
-    "url" : "https://www.instagram.com/gabrieleaquaro/"
-  },
-  {
-    "icon" : "google",
-    "url" : "https://www.google.com/search?q=gabriele+aquaro"
-  },
-  {
-    "icon" : "github",
-    "url" : "https://github.com/gabrieleaquaro"
-  }],
+  "contact": [
+    {
+      "icon": "instagram",
+      "url": "https://www.instagram.com/gabrieleaquaro/"
+    },
+    {
+      "icon": "google",
+      "url": "https://www.google.com/search?q=gabriele+aquaro"
+    },
+    {
+      "icon": "github",
+      "url": "https://github.com/gabrieleaquaro"
+    }
+  ],
   "name": "Gabriele Aquaro",
   "email": "gabriele.aquaro@gmail.com",
   "profile": "Machine Learning Engineer",

@@ -1,6 +1,6 @@
 .large-padding {
   position: relative;
-  padding: 8rem 0
+  padding: 8rem 0;
 }
 
 .overlay-mf {
@@ -14,12 +14,10 @@
   opacity: 0.7;
 }
 
-
 .generic-bg {
-  background-image: url('../../img/generic-bg.jpg');
+  background-image: url("../../img/generic-bg.jpg");
   background-size: cover;
 }
-
 
 .title-author {
   font-size: 1.5rem;

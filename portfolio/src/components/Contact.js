@@ -14,7 +14,7 @@ export default function Contact(props) {
               <div className="row">
                 <SectionTitle
                   title={"Contacts"}
-                  subtitle={"Where you can find more information about me."}
+                  subtitle={"Where to find more information about me."}
                 />
               </div>
               <div className="row py-5 d-flex justify-content-between">

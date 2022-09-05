@@ -1,10 +1,9 @@
 /* HOME */
 
-
 .home-sect {
   height: 100vh;
   background-color: var(--dark);
-  align-items:center;
+  align-items: center;
   text-align: center;
 }
 
@@ -28,12 +27,14 @@
 }
 
 .intro-bg {
-  /*background-image: url('../../img/intro.jpg');*/
+  background-image: url("../../img/intro_2.JPG");
+  background-position: center 20%;
+  /* background-image: url("../../img/intro.jpg");
+  background-position: center center; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center top;
-  opacity: 0.2;
+  opacity: 0.4;
   height: 100%;
   right: 0;
   top: 0;
