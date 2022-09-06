@@ -119,45 +119,51 @@
   },
   "projectsDetails": {
     "cnn": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "category": "category",
       "date": "date",
       "imgs": []
     },
     "cisco": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "category": "category",
       "date": "date",
       "imgs": []
     },
     "theme": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "category": "category",
       "date": "date",
       "url": "https://github.com/gabrieleaquaro/THEME_Tool",
       "imgs": []
     },
     "platformer": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "url": "https://gabrieleaquaro.github.io/platformer/",
       "category": "category",
       "date": "date",
       "imgs": []
     },
     "connect4": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "category": "category",
       "date": "date",
       "imgs": []
     },
     "adrenalina": {
-      "title": "Title",
-      "description": "description",
+      "title": "short title",
+      "long-title": "Desctiptive title",
+      "description": "",
       "category": "category",
       "date": "date",
       "imgs": []

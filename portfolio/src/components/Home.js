@@ -10,11 +10,11 @@ export default function Home(props) {
           <div className={"intro-bg"}></div>
           <div className="home-title">
             <h1>I am {props.name} </h1>
-            <h2 className="subtitle">
+            <h2 className="subtitle light-color">
               I stand where Problems and Solutions meet.
             </h2>
             <ReactTypingEffect
-              className="subtitle"
+              className="subtitle light-color"
               text={[
                 "FullStack Developer",
                 "Machine Learning Engineer",
