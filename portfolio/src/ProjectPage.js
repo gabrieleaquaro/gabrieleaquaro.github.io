@@ -56,7 +56,7 @@ export default function ProjectPage(props) {
               </p>
             </div>
           </div>
-          <div className="col-md-4 mt-5 light-bg">
+          <div className="col-md-4 mt-5 p-5 h-100 light-bg">
             <span className="overview-title"> OVERVIEW </span>
             <div className="mt-3">
               <span>

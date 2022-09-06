@@ -42,7 +42,7 @@ export default function Navigation(props) {
     <Navbar variant="dark" className={"dark-transp-bg"} fixed="top" expand="md">
       <Container>
         <div>
-          <Navbar.Brand className={"logo-nav primary-color"}>
+          <Navbar.Brand className={"logo-nav primary-color"} href="/">
             {props.logo}
           </Navbar.Brand>
         </div>
