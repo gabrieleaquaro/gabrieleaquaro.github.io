@@ -99,9 +99,10 @@
 
 .footer {
   text-align: center;
-  font-size: 0.8em;
-  color: var(--light);
-  background-color: var(--dark-trasp);
+  font-size: 1em;
+  padding: 10px 0 10px 0;
+  color: var(--dark);
+  background-color: var(--primary);
   font-weight: var(--bold-font-weight);
 }
 
@@ -110,6 +111,6 @@
 }
 
 .footer a {
-  color: var(--light);
+  color: var(--dark);
   text-decoration: none;
 }

@@ -10,6 +10,7 @@ import SectionBreaker from "./components/SectionBreaker";
 import Skills from "./components/Skillls";
 import Works from "./components/Works";
 import data from "./data.json";
+import { MyFooter } from "./components/footer";
 
 export default function MainPage() {
   return (
@@ -25,14 +26,8 @@ export default function MainPage() {
       />
       <Works data={data} />
       <Contact contactInfo={data.contact}></Contact>
-      <footer className="footer">
-        Copyright by Aquaro Gabriele,{" "}
-        <span className="smaller">
-          {" "}
-          Design by &nbsp;
-          <a href="https://bootstrapmade.com/">BootstrapMade</a>{" "}
-        </span>
-      </footer>
+
+      <MyFooter />
     </React.Fragment>
   );
 }
