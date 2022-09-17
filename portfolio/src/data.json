@@ -119,38 +119,38 @@
   },
   "projectsDetails": {
     "cnn": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
-      "category": "category",
-      "date": "date",
-      "imgs": []
+      "title": "Deep learning project",
+      "long-title": "CNN for image segmentation",
+      "description": "During my last  year of university, as a project assignment, we used various techniques to develope CNN for classificaiton, segmentation and Question aswering. This experience gave me a good confidence with Tensorflow and keras, bootsting also my ability in evaluating models.",
+      "category": "univeristy project",
+      "date": "November 2020",
+      "imgs": ["img", "img", "img"]
     },
     "cisco": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
-      "category": "category",
-      "date": "date",
-      "imgs": []
+      "title": "Cisco Systems",
+      "long-title": "Full stack developer",
+      "description": "At Cisco I work on optical network controllers. Here I'm getting more experience as a developer, working on professional softwares in a big team.",
+      "category": "Working experience",
+      "date": "November 2021 - Now",
+      "imgs": ["img", "img", "img"]
     },
     "theme": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
-      "category": "category",
-      "date": "date",
+      "title": "Theme Toool",
+      "long-title": "Risk evaluation application",
+      "description": "I collaboarated with Eni S.p.a to develope an application from scratch to substitute their old evaluation system. This Electron app guides the user in the evaluation and it shows the results. It also allows to store the report, export it and visualize the history of the reports.",
+      "category": "Working Experience",
+      "date": "September 2021",
       "url": "https://github.com/gabrieleaquaro/THEME_Tool",
-      "imgs": []
+      "imgs": ["theme_1", "theme_2", "img"]
     },
     "platformer": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
+      "title": "WebGL Platformer",
+      "long-title": "Platformer builder application from scratch",
+      "description": "For one university project, I implemented using minimal js (no libraries) a minimal platformer game, that can also be played below. It uses webGl library to render the 3d environment. Physics and Shaders have been also build from zero.",
       "url": "https://gabrieleaquaro.github.io/platformer/",
-      "category": "category",
-      "date": "date",
-      "imgs": []
+      "category": "univeristy project",
+      "date": "April 2021",
+      "imgs": ["img", "img", "img"]
     },
     "connect4": {
       "title": "short title",
@@ -158,7 +158,7 @@
       "description": "",
       "category": "category",
       "date": "date",
-      "imgs": []
+      "imgs": ["img", "img", "img"]
     },
     "adrenalina": {
       "title": "short title",
@@ -166,7 +166,7 @@
       "description": "",
       "category": "category",
       "date": "date",
-      "imgs": []
+      "imgs": ["img", "img", "img"]
     }
   },
   "contact": [
