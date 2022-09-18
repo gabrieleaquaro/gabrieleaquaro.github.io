@@ -121,10 +121,10 @@
     "cnn": {
       "title": "Deep learning project",
       "long-title": "CNN for image segmentation",
-      "description": "During my last  year of university, as a project assignment, we used various techniques to develope CNN for classificaiton, segmentation and Question aswering. This experience gave me a good confidence with Tensorflow and keras, bootsting also my ability in evaluating models.",
+      "description": "During my last  year of university, as a project assignment, we used various techniques to develoe CNN for classificaiton, segmentation and Question aswering. In particoular we developed one system to calssify wich pixels in an image were 'plant'/'grass' or background. This experience gave me a good confidence with Tensorflow and keras, bootsting also my ability in evaluating models.",
       "category": "univeristy project",
       "date": "November 2020",
-      "imgs": ["img", "img", "img"]
+      "imgs": ["cnn_1"]
     },
     "cisco": {
       "title": "Cisco Systems",
@@ -150,13 +150,13 @@
       "url": "https://gabrieleaquaro.github.io/platformer/",
       "category": "univeristy project",
       "date": "April 2021",
-      "imgs": ["img", "img", "img"]
+      "imgs": ["platformer_1", "platformer_2", "platformer_3", "platformer_4"]
     },
     "connect4": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
-      "category": "category",
+      "title": "Connect-4",
+      "long-title": "Minmax for connect-4 ai-agent",
+      "description": "In one of my first projects, I implemented the classical minmax algorithm for solving \"Connect-4\" game. This was one of my first approach to Python and AI in general.",
+      "category": "Personal Project",
       "date": "date",
       "imgs": ["img", "img", "img"]
     },

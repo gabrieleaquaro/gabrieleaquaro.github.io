@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 import data from "./data.json";
 import "./style/MainPage.css";
 import "./style/projectPage.css";
-import { images } from "./utils/images";
+import { projectImages } from "./utils/images";
 
 export default function ProjectPage(props) {
   const { projectId } = useParams();
@@ -47,7 +47,7 @@ export default function ProjectPage(props) {
                     className="align-middle"
                   >
                     <Image
-                      src={images[img]}
+                      src={projectImages[img]}
                       alt="Image"
                       className="project-image"
                     />
