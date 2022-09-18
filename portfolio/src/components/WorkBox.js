@@ -8,6 +8,7 @@ import work3 from "../img/work3.png";
 import work4 from "../img/work4.jpg";
 import work5 from "../img/work5.png";
 import work6 from "../img/work6.jpg";
+import { Link } from "react-router-dom";
 
 export default function WorkBox(props) {
   const images = {
@@ -41,14 +42,13 @@ export default function WorkBox(props) {
             </div>
             <div className="col-sm-4">
               <div className="w-like">
-                <a
-                  href={props.data.url}
+                <Link
+                  to={props.data.url}
                   target={props.newPage ? "_blank" : ""}
                   rel="noreferrer"
                 >
                   <BiPlusCircle> </BiPlusCircle>
-                </a>{" "}
-                {/* TODO :   Project page*/}
+                </Link>
               </div>
             </div>
           </div>
