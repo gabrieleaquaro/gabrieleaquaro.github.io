@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Router>
     <Routes>
-      <Route exact path="/" element={<MainPage />} />
+      <Route exact path="" element={<MainPage />} />
     </Routes>
     <Routes>
       <Route path="project-details/:projectId" element={<ProjectPage />} />

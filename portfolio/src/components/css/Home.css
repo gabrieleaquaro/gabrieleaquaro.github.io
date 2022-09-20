@@ -26,10 +26,10 @@
 }
 
 .intro-bg {
-  background-image: url("../../img/intro_2.JPG");
-  background-position: center;
-  /* background-image: url("../../img/intro.jpg");
-  background-position: center center; */
+  /* background-image: url("../../img/intro_2.JPG");
+  background-position: center; */
+  background-image: url("../../img/intro.jpg");
+  background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

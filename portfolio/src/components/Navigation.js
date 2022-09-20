@@ -1,36 +1,22 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 export default function Navigation(props) {
-  const activeSect = useRef("");
-  const [linkStyles, setLinkStyles] = useState({});
+  const [activated, setActive] = useState("home");
 
   useEffect(() => {
     const onScroll = () => {
-      const sections = document.querySelectorAll("section");
       let newCurrent = "";
+      const sections = document.querySelectorAll("section");
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.scrollY >= sectionTop - 300) {
+        if (window.scrollY >= sectionTop - 500) {
           newCurrent = section.getAttribute("id");
         }
       });
-
-      if (activeSect.current !== newCurrent) {
-        const styles = {
-          ...{ home: "", about: "", projects: "", contact: "" },
-          ...{ [newCurrent]: "activated" },
-        };
-        setLinkStyles(styles);
-
-        if (document.location.href.split("#").at(-1) === activeSect.current) {
-          document.location.href = "#" + newCurrent;
-        }
-
-        activeSect.current = newCurrent;
-      }
+      setActive(newCurrent);
     };
 
     onScroll();
@@ -38,11 +24,17 @@ export default function Navigation(props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const scrollToComponent = (e, name) => {
+    let hero = document.getElementById(name);
+    e.preventDefault(); // Stop Page Reloading
+    hero && hero.scrollIntoView();
+  };
+
   return (
     <Navbar variant="dark" className={"dark-transp-bg"} fixed="top" expand="md">
       <Container>
         <div>
-          <Navbar.Brand className={"logo-nav primary-color"} href="/">
+          <Navbar.Brand className={"logo-nav primary-color"} onclick="#">
             {props.logo}
           </Navbar.Brand>
         </div>
@@ -50,36 +42,51 @@ export default function Navigation(props) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className={"me-auto"}>
-              <Nav.Link
-                className={linkStyles.home}
-                href={props.baseUrl ? props.baseUrl + "#home" : "#home"}
+              <a
+                href="/"
+                className={activated === "home" ? "activated" : ""}
+                onClick={(e) => {
+                  scrollToComponent(e, "home");
+                }}
               >
                 HOME
-              </Nav.Link>
-              <Nav.Link
-                className={linkStyles.about}
-                href={props.baseUrl ? props.baseUrl + "#about" : "#about"}
+              </a>
+              <a
+                href="/"
+                className={activated === "about" ? "activated" : ""}
+                onClick={(e) => {
+                  scrollToComponent(e, "about");
+                }}
               >
                 ABOUT
-              </Nav.Link>
-              <Nav.Link
-                className={linkStyles.skills}
-                href={props.baseUrl ? props.baseUrl + "#skills" : "#skills"}
+              </a>
+              <a
+                href="/"
+                className={activated === "skills" ? "activated" : ""}
+                onClick={(e) => {
+                  scrollToComponent(e, "skills");
+                }}
               >
                 SKILLS
-              </Nav.Link>
-              <Nav.Link
-                className={linkStyles.projects}
-                href={props.baseUrl ? props.baseUrl + "#projects" : "#projects"}
+              </a>
+              <a
+                href="/"
+                className={activated === "projects" ? "activated" : ""}
+                onClick={(e) => {
+                  scrollToComponent(e, "projects");
+                }}
               >
                 PROJECTS
-              </Nav.Link>
-              <Nav.Link
-                className={linkStyles.contact}
-                href={props.baseUrl ? props.baseUrl + "#contact" : "#contact"}
+              </a>
+              <a
+                href="/"
+                className={activated === "contact" ? "activated" : ""}
+                onClick={(e) => {
+                  scrollToComponent(e, "contact");
+                }}
               >
                 CONTACT
-              </Nav.Link>
+              </a>
             </Nav>
           </Navbar.Collapse>
         </div>

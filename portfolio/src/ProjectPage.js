@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { Carousel, Container, Image } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { MyFooter } from "./components/footer";
-import Navigation from "./components/Navigation";
 import data from "./data.json";
 import "./style/MainPage.css";
 import "./style/projectPage.css";
@@ -22,14 +21,16 @@ export default function ProjectPage(props) {
         <div className="position-relative large-padding img-bg generic-bg">
           <div className="overlay-mf"></div>
 
-          <Navigation logo={data.logo} baseUrl="/"></Navigation>
-
           <Container className="position-relative">
             <div className="row">
               <div className="col-12 text-center dark-color">
                 <h2 className="main-title"> Project Information </h2>
                 <span className="subtitle-project">
-                  / &nbsp; Home &nbsp; / &nbsp; Projects &nbsp; / &nbsp;
+                  / &nbsp;
+                  <Link to="/" className="project-link">
+                    Home
+                  </Link>
+                  &nbsp; / &nbsp; Projects &nbsp; / &nbsp;
                   {projectData.title}
                 </span>
               </div>

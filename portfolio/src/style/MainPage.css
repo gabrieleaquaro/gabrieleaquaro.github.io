@@ -29,13 +29,16 @@
   font-size: 1.5rem;
 }
 
-.navbar-nav .nav-link {
+.navbar-nav a {
   color: var(--light);
   font-weight: var(--bold-font-weight);
   font-size: 1.1rem;
+  padding-top: 5px;
+  text-decoration: none;
+  margin-left: 15px;
 }
 
-.navbar-nav .nav-link.activated {
+.navbar-nav a.activated {
   color: var(--primary);
 }
 
