@@ -26,9 +26,6 @@
 }
 
 .intro-bg {
-  /* background-image: url("../../img/intro_2.JPG");
-  background-position: center; */
-  background-image: url("../../img/intro.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -37,4 +34,26 @@
   height: 100%;
   right: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.4;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .home-title {
+    position: absolute;
+    padding-left: 20px;
+    top: 25vh;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
 }

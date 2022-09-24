@@ -20,7 +20,10 @@ export default function Contact(props) {
               <div className="row py-5 d-flex justify-content-between">
                 {props.contactInfo.map((el) => {
                   return (
-                    <div className="col-md-4 my-4 d-flex justify-content-center">
+                    <div
+                      key={el.icon}
+                      className="col-md-4 my-4 d-flex justify-content-center"
+                    >
                       <div className="card-box-ico">
                         <a href={el.url} target="_blank" rel="noreferrer">
                           <span className="ico-circle dark-color">

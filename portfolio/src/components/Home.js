@@ -7,7 +7,12 @@ export default function Home(props) {
     <React.Fragment>
       <section id="home">
         <div className="home-sect">
-          <div className={"intro-bg"}></div>
+          <div
+            className={"intro-bg"}
+            style={{
+              backgroundImage: "url(" + require("../img/intro.jpg") + ")",
+            }}
+          ></div>
           <div className="home-title">
             <h1>I am {props.name} </h1>
             <h2 className="subtitle light-color">
