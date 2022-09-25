@@ -18,6 +18,10 @@ import platformer_1 from "../img/projects_imgs/platformer_1.png";
 import platformer_2 from "../img/projects_imgs/platformer_2.png";
 import platformer_3 from "../img/projects_imgs/platformer_3.png";
 import platformer_4 from "../img/projects_imgs/platformer_4.png";
+import connect4_1 from "../img/projects_imgs/connect4_1.png";
+import connect4_2 from "../img/projects_imgs/connect4_2.png";
+import connect4_3 from "../img/projects_imgs/connect4_3.png";
+import connect4_4 from "../img/projects_imgs/connect4_4.png";
 import cnn_1 from "../img/work4.jpg";
 
 export const icons = {
@@ -43,4 +47,8 @@ export const projectImages = {
   platformer_2: platformer_2,
   platformer_3: platformer_3,
   platformer_4: platformer_4,
+  connect4_1: connect4_1,
+  connect4_2: connect4_2,
+  connect4_3: connect4_3,
+  connect4_4: connect4_4,
 };

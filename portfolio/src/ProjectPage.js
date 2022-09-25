@@ -44,10 +44,7 @@ export default function ProjectPage(props) {
               <Carousel className="cust-carousel">
                 {projectData.imgs.map((img, index) => {
                   return (
-                    <Carousel.Item
-                      key={img + "_" + index}
-                      className="align-middle"
-                    >
+                    <Carousel.Item key={img + "_" + index}>
                       <Image
                         src={projectImages[img]}
                         alt="Image"

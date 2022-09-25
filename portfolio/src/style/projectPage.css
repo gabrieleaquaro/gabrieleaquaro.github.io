@@ -18,6 +18,8 @@
 .project-image {
   max-height: 50vh;
   max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 .project-link {
@@ -37,16 +39,28 @@
 }
 
 .cust-carousel a.carousel-control-next {
-  display: none;
+  position: absolute;
+  top: calc(102%);
+  right: 0;
+  height: 15px;
+  border-radius: 50%;
+  width: 15px;
+  background-color: var(--primary);
 }
 
 .cust-carousel a.carousel-control-prev {
-  display: none;
+  position: absolute;
+  top: calc(102%);
+  right: 0;
+  height: 15px;
+  border-radius: 50%;
+  width: 15px;
+  background-color: var(--primary);
 }
 
 .cust-carousel div.carousel-indicators {
   position: absolute;
-  bottom: -50px;
+  top: calc(102%);
   right: 0;
 }
 
