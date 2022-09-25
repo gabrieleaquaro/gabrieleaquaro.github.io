@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.3b9a80f0.css",
-    "main.js": "/static/js/main.682a17bd.js",
+    "main.js": "/static/js/main.562ffa36.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile.png": "/static/media/profile.6deede3d2a5ee95fa3fa.png",
+    "static/media/adrenalina_1.png": "/static/media/adrenalina_1.beb38ac4ae3b86e82aef.png",
     "static/media/work5.png": "/static/media/work5.a5e22533a0983cee6941.png",
     "static/media/work3.png": "/static/media/work3.257d64462bcdfb3559cf.png",
     "static/media/platformer_4.png": "/static/media/platformer_4.19bfd849f5609117ec5a.png",
@@ -17,19 +18,20 @@
     "static/media/theme_2.png": "/static/media/theme_2.4f2f5613c637d72a72e7.png",
     "static/media/work4.jpg": "/static/media/work4.6bc7453668dfdc78a066.jpg",
     "static/media/work6.jpg": "/static/media/work6.fece562612869d046c44.jpg",
+    "static/media/cisco_2.jpg": "/static/media/cisco_2.7062fb1146e8222f66b4.jpg",
     "static/media/connect4_4.png": "/static/media/connect4_4.3fd4353527cce21eac8f.png",
     "static/media/connect4_3.png": "/static/media/connect4_3.6de0545e55a582c4743c.png",
     "static/media/connect4_2.png": "/static/media/connect4_2.da96ae08062c0d04082a.png",
     "static/media/connect4_1.png": "/static/media/connect4_1.e8ac7a60c7f158c346a6.png",
-    "static/media/work1.png": "/static/media/work1.6e0db341069924019125.png",
+    "static/media/work1.png": "/static/media/work1.88707162d88a26cc5d81.png",
     "static/media/author.png": "/static/media/author.4d1f7f5384ada76bdb89.png",
     "index.html": "/index.html",
     "main.3b9a80f0.css.map": "/static/css/main.3b9a80f0.css.map",
-    "main.682a17bd.js.map": "/static/js/main.682a17bd.js.map",
+    "main.562ffa36.js.map": "/static/js/main.562ffa36.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3b9a80f0.css",
-    "static/js/main.682a17bd.js"
+    "static/js/main.562ffa36.js"
   ]
 }
