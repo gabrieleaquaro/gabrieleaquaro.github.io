@@ -40,7 +40,7 @@ export default function ProjectPage(props) {
 
         <div className="container position-relative">
           <div className="row  mt-5 mb-3 ">
-            <div className="col-md-6  ">
+            <div className="col-md-6">
               <Carousel className="cust-carousel">
                 {projectData.imgs.map((img, index) => {
                   return (

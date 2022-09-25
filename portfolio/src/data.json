@@ -121,7 +121,7 @@
     "cnn": {
       "title": "Deep learning project",
       "long-title": "CNN for image segmentation",
-      "description": "During my last  year of university, as a project assignment, we used various techniques to develoe CNN for classificaiton, segmentation and Question aswering. In particoular we developed one system to calssify wich pixels in an image were 'plant'/'grass' or background. This experience gave me a good confidence with Tensorflow and keras, bootsting also my ability in evaluating models.",
+      "description": "During my last  year of university, as a project assignment, we used various techniques to develoe CNN for classificaiton, segmentation and Question aswering. In particoular we developed one system to calssify wich pixels in an image were 'plant'/'grass' or background. This experience gave me a good confidence with Tensorflow and keras, bootsting also my ability in evaluating models. In particular for the segmentation problem, we fine-tuned a UNET network, because some times you have to acknoledge that the state of the art is called so for a reason. ",
       "category": "univeristy project",
       "date": "November 2020",
       "imgs": ["cnn_1"]
@@ -129,26 +129,26 @@
     "cisco": {
       "title": "Cisco Systems",
       "long-title": "Full stack developer",
-      "description": "At Cisco I work on optical network controllers. Here I'm getting more experience as a developer, working on professional softwares in a big team.",
+      "description": "At Cisco I work on optical network controllers. Here I'm getting more experience as a developer, working on professional softwares in a big team. During my average day I have to work on multiple projects, going from Python backend, to React frontend, passing throught Tensorflow.",
       "category": "Working experience",
       "date": "November 2021 - Now",
-      "imgs": ["img", "img", "img"]
+      "imgs": ["cisco_1", "cisco_2"]
     },
     "theme": {
       "title": "Theme Toool",
-      "long-title": "Risk evaluation application",
+      "long-title": "Risk evaluation tool",
       "description": "I collaboarated with Eni S.p.a to develope an application from scratch to substitute their old evaluation system. This Electron app guides the user in the evaluation and it shows the results. It also allows to store the report, export it and visualize the history of the reports.",
       "category": "Working Experience",
       "date": "September 2021",
       "url": "https://github.com/gabrieleaquaro/THEME_Tool",
-      "imgs": ["theme_1", "theme_2", "img"]
+      "imgs": ["theme_1", "theme_2"]
     },
     "platformer": {
       "title": "WebGL Platformer",
       "long-title": "Platformer builder application from scratch",
       "description": "For one university project, I implemented using minimal js (no libraries) a minimal platformer game, that can also be played below. It uses webGl library to render the 3d environment. Physics and Shaders have been also build from zero.",
       "url": "https://gabrieleaquaro.github.io/platformer/",
-      "category": "univeristy project",
+      "category": "Univeristy project",
       "date": "April 2021",
       "imgs": ["platformer_1", "platformer_2", "platformer_3", "platformer_4"]
     },
@@ -161,12 +161,12 @@
       "imgs": ["connect4_1", "connect4_2", "connect4_3", "connect4_4"]
     },
     "adrenalina": {
-      "title": "short title",
-      "long-title": "Desctiptive title",
-      "description": "",
-      "category": "category",
-      "date": "date",
-      "imgs": ["img", "img", "img"]
+      "title": "Adrenalina",
+      "long-title": "adrenalina board game",
+      "description": "As final project of my buchelor degree, we had to implement an online multiplayer board game called 'Adrenalina'. We used Java and we had to implement a CLI, a GUI and the networking to be able to paly with other players in yuor LAN.",
+      "category": "University project",
+      "date": "February 2019",
+      "imgs": ["adrenalina_1", "adrenalina_2"]
     }
   },
   "contact": [

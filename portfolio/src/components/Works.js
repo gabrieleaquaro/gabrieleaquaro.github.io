@@ -10,13 +10,11 @@ export default function Works(props) {
         <SectionTitle
           title={"Projects"}
           subtitle={"Projects and Work Experience."}
-        >
-          {" "}
-        </SectionTitle>
+        />
         <Container>
           <div className="row">
             {props.data.experiences.map((exp, index) => {
-              return <WorkBox key={index} data={exp} newPage={true}></WorkBox>;
+              return <WorkBox key={index} data={exp}></WorkBox>;
             })}
           </div>
         </Container>
