@@ -34,7 +34,12 @@ export default function Navigation(props) {
     <Navbar variant="dark" className={"dark-transp-bg"} fixed="top" expand="md">
       <Container>
         <div>
-          <Navbar.Brand className={"logo-nav primary-color"} onClick="#">
+          <Navbar.Brand
+            className={"logo-nav primary-color"}
+            onClick={(e) => {
+              scrollToComponent(e, "home");
+            }}
+          >
             {props.logo}
           </Navbar.Brand>
         </div>
