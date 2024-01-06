@@ -3,6 +3,21 @@ import { Button, Form, Table } from "react-bootstrap";
 import { BiExport, BiPlus, BiTrash } from "react-icons/bi";
 
 export const Results = () => {
+  const [atheltes, setAthletes] = useState([0]);
+
+  return (
+    <>
+      <Button onClick={() => setAthletes(atheltes.concat(atheltes.length))}>
+        Add Athelte
+      </Button>
+      {atheltes.map((el) => (
+        <Result key={el} />
+      ))}
+    </>
+  );
+};
+
+export const Result = () => {
   const [name, setName] = useState("Mario Rossi");
   const [data, setData] = useState([]);
 
