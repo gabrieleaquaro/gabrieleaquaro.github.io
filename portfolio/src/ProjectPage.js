@@ -18,7 +18,7 @@ export default function ProjectPage(props) {
   return (
     <>
       <div style={{ minHeight: "95vh" }}>
-        <div className="position-relative large-padding img-bg generic-bg">
+        <div className="position-relative large-padding generic-bg">
           <div className="overlay-mf"></div>
 
           <div className="container position-relative">

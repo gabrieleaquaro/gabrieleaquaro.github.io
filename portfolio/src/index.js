@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style/index.css";
-import MainPage from "./MainPage";
-import reportWebVitals from "./reportWebVitals";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from "./MainPage";
 import ProjectPage from "./ProjectPage";
+import reportWebVitals from "./reportWebVitals";
+import "./style/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
