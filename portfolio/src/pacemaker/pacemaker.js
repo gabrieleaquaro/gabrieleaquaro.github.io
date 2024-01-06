@@ -58,7 +58,7 @@ export const Pacemaker = () => {
           <div className="row m-5">
             <Form.Group className="mb-3">
               <Form.Label className="text-white">
-                Pace (minutes / km )
+                Pace (Minutes / Km)
               </Form.Label>
               <div className="row d-flex">
                 <div className="col-6">
