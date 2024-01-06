@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import Form from "react-bootstrap/Form";
 import { BiPlay, BiStop } from "react-icons/bi";
 import "./pacer.css";
+import { Results } from "./results-table";
 
 const audio = new Audio("./beep.wav");
 
@@ -141,6 +142,7 @@ export const Pacemaker = () => {
           </div>
         </Form>
       </div>
+      <Results />
     </div>
   );
 };
