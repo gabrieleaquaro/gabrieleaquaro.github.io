@@ -52,7 +52,7 @@ export const Pacemaker = () => {
 
   return (
     <div className="full-size">
-      <h2 className="proect-title text-white p-5"> Pacemaker </h2>
+      <h1 className="title primary-color p-5"> PACEMAKER </h1>
       <div className="col">
         <Form noValidate onSubmit={handleSubmit}>
           <div className="row m-5">

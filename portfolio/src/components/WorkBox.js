@@ -11,17 +11,17 @@ import work6 from "../img/work6.jpg";
 import work7 from "../img/work7.jpg";
 import "./css/workBox.css";
 
-export default function WorkBox(props) {
-  const images = {
-    work1: work1,
-    work2: work2,
-    work3: work3,
-    work4: work4,
-    work5: work5,
-    work6: work6,
-    work7: work7,
-  };
+const images = {
+  work1: work1,
+  work2: work2,
+  work3: work3,
+  work4: work4,
+  work5: work5,
+  work6: work6,
+  work7: work7,
+};
 
+export default function WorkBox(props) {
   return (
     <div className="col-md-4">
       <div className="work-box box-shadow">
