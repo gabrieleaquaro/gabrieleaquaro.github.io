@@ -24,11 +24,14 @@ export const Pacemaker = () => {
 
     if (!isRunning) {
       const mSecondsToWait =
-        ((data.minutes * 60 + data.seconds) / 1000) * data.distance * 1000;
+        ((Number(data.minutes) * 60 + Number(data.seconds)) / 1000) *
+        Number(data.distance) *
+        1000;
+      console.log("Waiting: ", mSecondsToWait, " ms");
       const _id = setInterval(interval, 50, mSecondsToWait);
-      lastBip.current = new Date();
       setId(_id);
     } else {
+      lastBip.current = null;
       clearInterval(id);
     }
     setIsRunning(!isRunning);
@@ -36,8 +39,7 @@ export const Pacemaker = () => {
 
   const interval = (mSecondsToWait) => {
     const now = new Date();
-    if (now - lastBip.current >= mSecondsToWait) {
-      console.log("Bip after: ", now - lastBip.current);
+    if (!lastBip.current || now - lastBip.current >= mSecondsToWait) {
       audio.play();
       lastBip.current = new Date();
     }
