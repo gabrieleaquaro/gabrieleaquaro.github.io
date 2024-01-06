@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import MainPage from "./MainPage";
 import ProjectPage from "./ProjectPage";
+import { Pacemaker } from "./pacemaker/pacemaker";
 import reportWebVitals from "./reportWebVitals";
 import "./style/index.css";
 
@@ -11,8 +12,7 @@ root.render(
   <Router>
     <Routes>
       <Route exact path="" element={<MainPage />} />
-    </Routes>
-    <Routes>
+      <Route exact path="pacemaker" element={<Pacemaker />} />
       <Route path="project-details/:projectId" element={<ProjectPage />} />
     </Routes>
   </Router>

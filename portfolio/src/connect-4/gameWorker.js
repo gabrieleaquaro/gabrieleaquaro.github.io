@@ -158,7 +158,6 @@ export default () => {
             ? YELLOW_AI
             : RED_USER;
           const hashed = hashBoard(clonedBoard);
-          console.log(hashed);
           if (hashedStates.has(hashed)) return null;
           hashedStates.add(hashed);
           return new GameState({ board: clonedBoard, turn: !this.turn });

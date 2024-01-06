@@ -1,0 +1,9 @@
+
+
+.full-size{
+  height: 100vh;
+  max-height: 100vh;
+  background-color: var(--dark);
+  align-items: center;
+  text-align: center;
+}
