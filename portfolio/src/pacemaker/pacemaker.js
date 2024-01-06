@@ -21,13 +21,11 @@ export const Pacemaker = () => {
   const handleSubmit = (e) => {
     if (e.preventDefault) e.preventDefault();
     if (!e.currentTarget.checkValidity()) return;
-
     if (!isRunning) {
       const mSecondsToWait =
         ((Number(data.minutes) * 60 + Number(data.seconds)) / 1000) *
         Number(data.distance) *
         1000;
-      console.log("Waiting: ", mSecondsToWait, " ms");
       const _id = setInterval(interval, 50, mSecondsToWait);
       setId(_id);
     } else {
