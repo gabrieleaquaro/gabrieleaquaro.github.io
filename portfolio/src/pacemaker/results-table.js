@@ -1,23 +1,44 @@
 import { useCallback, useEffect, useState } from "react";
 import { Button, Form, Table } from "react-bootstrap";
-import { BiExport, BiPlus, BiTrash } from "react-icons/bi";
+import { BiChart, BiExport, BiPlus, BiTrash, BiX } from "react-icons/bi";
 
-export const Results = () => {
+const DATAPOINT = {
+  distance: 1200,
+  time: 0,
+  lacticAcidValue: 0,
+  heartRate: 0,
+  stepFrequency: 0,
+};
+
+export const Results = ({ setChartData }) => {
   const [atheltes, setAthletes] = useState([0]);
 
+  const deleteElement = (el) => {
+    setAthletes((_old) => {
+      const index = atheltes.findIndex((_el) => el === _el);
+      _old.splice(index, 1);
+      return [..._old];
+    });
+  };
   return (
     <>
-      <Button onClick={() => setAthletes(atheltes.concat(atheltes.length))}>
-        Add Athelte
+      <Button
+        onClick={() => setAthletes(atheltes.concat(atheltes.at(-1) ?? 0 + 1))}
+      >
+        <BiPlus /> Athelte
       </Button>
       {atheltes.map((el) => (
-        <Result key={el} />
+        <Result
+          key={el}
+          selfDelete={() => deleteElement(el)}
+          setChartData={setChartData}
+        />
       ))}
     </>
   );
 };
 
-export const Result = () => {
+export const Result = ({ selfDelete, setChartData }) => {
   const [name, setName] = useState("Mario Rossi");
   const [data, setData] = useState([]);
 
@@ -31,11 +52,29 @@ export const Result = () => {
             <th>
               <Button
                 size="sm"
+                variant="danger"
+                title="Delete Athlete"
+                onClick={selfDelete}
+                className="me-2"
+              >
+                <BiX />
+              </Button>
+              <Button
+                size="sm"
+                className="me-2"
+                title="Export Data"
                 onClick={() => {
                   _export(data, name);
                 }}
               >
                 <BiExport />
+              </Button>
+              <Button
+                title="Show Chart"
+                size="sm"
+                onClick={() => setChartData(data)}
+              >
+                <BiChart />
               </Button>
             </th>
             <th>Athelte</th>
@@ -56,7 +95,7 @@ export const Result = () => {
                 className="mx-2"
                 onClick={() =>
                   setData((old) => {
-                    return old.concat({ distance: "", time: "" });
+                    return old.concat({ ...DATAPOINT });
                   })
                 }
               >
@@ -65,6 +104,9 @@ export const Result = () => {
             </th>
             <th>Distance [m]</th>
             <th>Time</th>
+            <th>Lactic Acid Value [mM/l]</th>
+            <th>Heart Rate [bpm]</th>
+            <th>Frequency</th>
             <th></th>
           </tr>
         </thead>
@@ -74,6 +116,7 @@ export const Result = () => {
               <tr key={index}>
                 <td>{index + 1}</td>
                 <EditableRow
+                  type="number"
                   onChange={(e) =>
                     setData((_old_data) => {
                       _old_data[index]["distance"] = e.target.value;
@@ -84,6 +127,7 @@ export const Result = () => {
                   {el["distance"]}
                 </EditableRow>
                 <EditableRow
+                  type="number"
                   onChange={(e) =>
                     setData((_old_data) => {
                       _old_data[index]["time"] = e.target.value;
@@ -92,6 +136,39 @@ export const Result = () => {
                   }
                 >
                   {el["time"]}
+                </EditableRow>
+                <EditableRow
+                  type="number"
+                  onChange={(e) =>
+                    setData((_old_data) => {
+                      _old_data[index]["lacticAcidValue"] = e.target.value;
+                      return [..._old_data];
+                    })
+                  }
+                >
+                  {el["lacticAcidValue"]}
+                </EditableRow>
+                <EditableRow
+                  type="number"
+                  onChange={(e) =>
+                    setData((_old_data) => {
+                      _old_data[index]["heartRate"] = e.target.value;
+                      return [..._old_data];
+                    })
+                  }
+                >
+                  {el["heartRate"]}
+                </EditableRow>
+                <EditableRow
+                  type="number"
+                  onChange={(e) =>
+                    setData((_old_data) => {
+                      _old_data[index]["stepFrequency"] = e.target.value;
+                      return [..._old_data];
+                    })
+                  }
+                >
+                  {el["stepFrequency"]}
                 </EditableRow>
                 <td>
                   <Button
@@ -116,7 +193,7 @@ export const Result = () => {
   );
 };
 
-const EditableRow = ({ children, onChange }) => {
+const EditableRow = ({ children, onChange, type = "text" }) => {
   const [inEdit, setInEdit] = useState(false);
 
   const toggleEdit = useCallback(() => {
@@ -140,7 +217,12 @@ const EditableRow = ({ children, onChange }) => {
       {!inEdit ? (
         children ?? ""
       ) : (
-        <Form.Control value={children ?? ""} onChange={onChange} />
+        <Form.Control
+          as="input"
+          value={children ?? ""}
+          type={type}
+          onChange={onChange}
+        />
       )}
     </td>
   );

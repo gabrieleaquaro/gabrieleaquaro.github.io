@@ -116,7 +116,7 @@
     {
       "title": "Pacemaker Tool",
       "text": "Personal Project",
-      "url": "/pacemaker",
+      "url": "/project-details/pacemaker",
       "date": "April 2018",
       "img": "work7"
     }
@@ -178,11 +178,12 @@
     },
     "pacemaker": {
       "title": "Pacemaker",
-      "long-title": "Pacemaker for V02 test in track and field",
-      "description": "V02 test is laking of a pacemaker tool, this tools allows to play a sound according to the pace and the distance between cones in the track.",
-      "c ategory": "Personal Project",
+      "long-title": "Pacemaker for V02 Max test in track and field",
+      "description": "V02 Max cosist in reps of 1200m on a track at increasing speed. After each rep the speed is increased and the amount of lactic acid is measured.\n Plotting the results will allow to compute the value of the aerobic and anaerobic threshold.",
+      "category": "Personal Project",
       "date": "April 2018",
-      "imgs": []
+      "url": "/#/pacemaker",
+      "imgs": ["pacemaker_1"]
     }
   },
   "contact": [

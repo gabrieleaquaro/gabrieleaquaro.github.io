@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Route, HashRouter as Router, Routes } from "react-router-dom";
 import MainPage from "./MainPage";
 import ProjectPage from "./ProjectPage";
-import { Pacemaker } from "./pacemaker/pacemaker";
+import { PacemakerMain } from "./pacemaker/main";
 import reportWebVitals from "./reportWebVitals";
 import "./style/index.css";
 
@@ -12,7 +12,7 @@ root.render(
   <Router>
     <Routes>
       <Route exact path="" element={<MainPage />} />
-      <Route exact path="pacemaker" element={<Pacemaker />} />
+      <Route exact path="pacemaker" element={<PacemakerMain />} />
       <Route path="project-details/:projectId" element={<ProjectPage />} />
     </Routes>
   </Router>

@@ -1,32 +1,33 @@
 import {
+  FaBeer,
+  FaBook,
   FaCalendarCheck,
   FaChessBoard,
-  FaBook,
   FaCode,
-  FaBeer,
-  FaInstagram,
   FaFacebook,
-  FaGoogle,
   FaGithub,
+  FaGoogle,
+  FaInstagram,
 } from "react-icons/fa";
 import { GiStairsGoal } from "react-icons/gi";
 import { VscGraphScatter } from "react-icons/vsc";
 import img from "../img/generic-bg.jpg";
-import theme_1 from "../img/projects_imgs/theme_1.png";
-import theme_2 from "../img/projects_imgs/theme_2.png";
-import platformer_1 from "../img/projects_imgs/platformer_1.png";
-import platformer_2 from "../img/projects_imgs/platformer_2.png";
-import platformer_3 from "../img/projects_imgs/platformer_3.png";
-import platformer_4 from "../img/projects_imgs/platformer_4.png";
+import adrenalina_1 from "../img/projects_imgs/adrenalina_1.png";
+import cisco_2 from "../img/projects_imgs/cisco_2.jpg";
 import connect4_1 from "../img/projects_imgs/connect4_1.png";
 import connect4_2 from "../img/projects_imgs/connect4_2.png";
 import connect4_3 from "../img/projects_imgs/connect4_3.png";
 import connect4_4 from "../img/projects_imgs/connect4_4.png";
-import adrenalina_1 from "../img/projects_imgs/adrenalina_1.png";
-import adrenalina_2 from "../img/work6.jpg";
-import cisco_2 from "../img/projects_imgs/cisco_2.jpg";
+import pacemaker_1 from "../img/projects_imgs/pacemaker_1.png";
+import platformer_1 from "../img/projects_imgs/platformer_1.png";
+import platformer_2 from "../img/projects_imgs/platformer_2.png";
+import platformer_3 from "../img/projects_imgs/platformer_3.png";
+import platformer_4 from "../img/projects_imgs/platformer_4.png";
+import theme_1 from "../img/projects_imgs/theme_1.png";
+import theme_2 from "../img/projects_imgs/theme_2.png";
 import cisco_1 from "../img/work1.png";
 import cnn_1 from "../img/work4.jpg";
+import adrenalina_2 from "../img/work6.jpg";
 
 export const icons = {
   ai: <VscGraphScatter />,
@@ -59,4 +60,5 @@ export const projectImages = {
   adrenalina_2: adrenalina_2,
   cisco_1: cisco_1,
   cisco_2: cisco_2,
+  pacemaker_1: pacemaker_1,
 };
